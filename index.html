@@ -1,0 +1,108 @@
+---
+layout: page
+title: Kraken Systems
+active: home
+excerpt: "A simple and clean responsive Jekyll theme for words and photos."
+search_omit: true
+---
+
+<section class="section swatch-yellow-black">
+                <div class="container">
+                    <header class="section-header logo">
+                        <img height="200" width="300" src="assets/images/logo-big.svg">
+                    </header>
+                </div>
+            </section>
+            <section class="section swatch-white-red has-top">
+                <div class="decor-top">
+                    <svg class="decor" height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0 L100 100 L0 100" stroke-width="0"></path>
+                    </svg>
+                </div>
+                <header class="section-header underline">
+                    <h2 class="headline super hairline">Some kickass punchline</h2>
+                </header>
+            </section>
+            <section class="section swatch-yellow-black has-top">
+                <div class="decor-top">
+                    <svg class="decor" height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 100 L100 0 L100 100" stroke-width="0"></path>
+                    </svg>
+                </div>
+                <div class="container">
+                    <header class="section-header ">
+                        <h2 class="headline super hairline">We do some cool stuff</h2>
+                    </header>
+                    <div class="row">
+                        <ul class="list-unstyled row box-list ">
+                            <li class="col-md-3 text-center">
+                                <div class="box-round">
+                                    <div class="box-dummy"></div>
+                                    <a class="box-inner " href="single-service.html">
+                                        <i class="fa fa-sitemap"></i>
+                                    </a>
+                                </div>
+                                <h3 class="text-center">
+                                    <a href="single-service.html">Solution Architecture</a>    
+                                </h3>
+                            </li>
+                            <li class="col-md-3 text-center">
+                                <div class="box-round">
+                                    <div class="box-dummy"></div>
+                                    <a class="box-inner " href="single-service.html">
+                                        <i class="fa fa-keyboard-o"></i>
+                                    </a>
+                                </div>
+                                <h3 class="text-center">
+                                    <a href="single-service.html">Design &amp; Development</a>    
+                                </h3>
+                            </li>
+                            <li class="col-md-3 text-center">
+                                <div class="box-round">
+                                    <div class="box-dummy"></div>
+                                    <a class="box-inner " href="single-service.html">
+                                        <i class="fa fa-tasks"></i>
+                                    </a>
+                                </div>
+                                <h3 class="text-center">
+                                    <a href="single-service.html">Hosting and Maintenance</a>    
+                                </h3>
+                            </li>
+                            <li class="col-md-3 text-center">
+                                <div class="box-round">
+                                    <div class="box-dummy"></div>
+                                    <a class="box-inner " href="single-service.html">
+                                        <i class="fa fa-signal"></i>
+                                    </a>
+                                </div>
+                                <h3 class="text-center">
+                                    <a href="single-service.html">Data Visualization</a>    
+                                </h3>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="/services" class="btn btn-primary btn-lg btn-link">View our services</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section class="section swatch-white-red">
+                <div class="container">
+                    <header class="section-header underline text-center">
+                        <h2 class="headline super hairline">Latest blog post</h2>
+                    </header>
+                    <div class="latest-post col-md-8 col-md-offset-2">
+                        {% for post in site.posts limit:1 %}
+                            <h3>{{ post.title }}</h3>
+                            <div>
+                                {{ post.excerpt }}
+                            </div>
+                            <a href="{{post.url}}" class="more-link">read more</a>
+
+                        {% endfor %}
+                    </div>
+                   
+                </div>
+            </section>
