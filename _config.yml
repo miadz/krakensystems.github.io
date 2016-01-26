@@ -4,7 +4,7 @@ title: Site Title
 locale: en_US
 description: Describe your website here.
 search: true
-# url: http://krakensystems.github.io/
+share-url: "http://krakensystems.github.io"
 
 # Jekyll configuration
 
