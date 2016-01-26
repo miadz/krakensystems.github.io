@@ -4,7 +4,6 @@ title: 'This is actually first real md post'
 date: 2016-01-15 13:26:34
 author: 'Mario Nikolaus'
 author_link: https://hr.linkedin.com/in/mario.nikolaus
-cover: 2015-08-31-05.png
 categories: debug
 tags: [test]
 comments: true
