@@ -127,13 +127,45 @@
                     <div class="col-md-9">
 
             <article class="post post-showinfo type-post status-publish format-image has-post-thumbnail hentry category-news category-web-design tag-design tag-dynamics tag-minimal post_format-post-format-image">
+                {% if page.cover %}
                 <div class="post-media">
                     <a class="feature-image">
                         <img src="/assets/images/uploads/{{page.cover}}">   
                     </a>
                 </div>
+                {% endif %}
                 <div class="post-body">
                     {{ content }}
+                </div>
+                <div class="post-share text-center">
+                    <small>Share this post</small>
+                    <ul class="social-share">
+                        <li>
+                            <a href="https://twitter.com/share?url={{site.url}}{{page.url}}" target="_blank" data-toggle="tooltip" title="" data-original-title="Share on Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/share?url={{site.url}}{{page.url}}" target="_blank" data-toggle="tooltip" title="" data-original-title="Share on Google+">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}&amp;images={{site.url}}assets/images/uploads/{{page.cover}}" target="_blank" data-toggle="tooltip" title="" data-original-title="Share on Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="//pinterest.com/pin/create/button/?url={{site.url}}{{page.url}}&amp;media={{site.url}}assets/images/uploads/{{page.cover}}" target="_blank" data-toggle="tooltip" title="" data-original-title="Pin on Pinterest">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={site.url}}{{page.url}" target="_blank" data-toggle="tooltip" title="" data-original-title="Share on LinkedIn">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     {% include comments.html %}

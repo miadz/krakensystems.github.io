@@ -28,11 +28,13 @@ search_omit: true
 	    <div class="col-md-9">
 			{% for post in site.posts %}
 			<article class="post post-showinfo type-post status-publish format-image has-post-thumbnail hentry category-news category-web-design tag-design tag-dynamics tag-minimal post_format-post-format-image">
+                {% if post.cover %}
 				<div class="post-media">
 					<a href="{{ post.url }}" class="feature-image">
 						<img src="/assets/images/uploads/{{post.cover}}">	
 					</a>
 				</div>
+                {% endif %}
 				<div class="post-head small-screen-center">
 			        <h2 class="post-title entry-title">
 			            <a href="{{ post.url }}" title="Permalink to This theme is so nice!" rel="bookmark">
