@@ -4,24 +4,24 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{page.title}}</title>
+        <title>This is actually first real md post</title>
         <link rel="icon" type="image/x-icon" href="assets/images/favicons/favicon.ico" />
         <link rel="icon" type="image/png" href="assets/images/favicons/favicon.png" />
         <!-- For iPhone 4 Retina display: -->
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/assets/images/favicons/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114-precomposed.png">
         <!-- For iPad: -->
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/assets/images/favicons/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72-precomposed.png">
         <!-- For iPhone: -->
         <link rel="apple-touch-icon-precomposed" href="assets/images/favicons/apple-touch-icon-60x60-precomposed.png">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/theme.css">
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/color-defaults.min.css">
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/swatch-black-yellow.min.css">
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/swatch-red-white.min.css">
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/swatch-white-red.min.css">
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/swatch-yellow-black.min.css">
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/fonts.min.css" media="screen">
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/theme.css">
+        <link rel="stylesheet" href="/assets/css/color-defaults.min.css">
+        <link rel="stylesheet" href="/assets/css/swatch-black-yellow.min.css">
+        <link rel="stylesheet" href="/assets/css/swatch-red-white.min.css">
+        <link rel="stylesheet" href="/assets/css/swatch-white-red.min.css">
+        <link rel="stylesheet" href="/assets/css/swatch-yellow-black.min.css">
+        <link rel="stylesheet" href="/assets/css/fonts.min.css" media="screen">
     </head>
     <body class="pace-on pace-dot">
         <div class="pace-overlay swatch-yellow-black"></div>
@@ -85,31 +85,31 @@
             <section class="section swatch-yellow-black">
                 <div class="container">
                     <header class="section-header no-underline">
-                        <h1 class="headline hyper hairline"> {{ page.title }} </h1>
+                        <h1 class="headline hyper hairline"> This is actually first real md post </h1>
                         <br><br>
                         <div class="post-head small-screen-center">
                             <small class="post-author">
-                                <a href="{{ page.author_link }}">
-                                    {{ page.author }}
+                                <a href="https://hr.linkedin.com/in/mario.nikolaus">
+                                    Mario Nikolaus
                                 </a>
                             </small>
                             <small class="post-date">
-                                {{ page.date | date_to_string }}
+                                15 Jan 2016
                             </small>
                         </div>
                         <div class="post-extras bordered padded-huge text-center">
                             <div class="text-center">
                                 <span class="post-category">
                                     <i class="fa fa-folder-open"></i>
-                                    {% for category in page.categories %}
-                                        <a href="/category/{{ category }}" rel="tag">{{ category }}</a>
-                                    {% endfor %}
+                                    
+                                        <a href="/category/debug" rel="tag">debug</a>
+                                    
                                 </span>
                                 <span class="post-tags">
                                     <i class="fa fa-tags"></i>
-                                    {% for tag in page.tags %}
-                                        <a href="/tag/{{ tag }}" rel="tag">{{ tag }}</a>, 
-                                    {% endfor %}
+                                    
+                                        <a href="/tag/test" rel="tag">test</a>, 
+                                    
                                 </span>
                             </div>
                         </div>
@@ -127,41 +127,54 @@
                     <div class="col-md-9">
 
             <article class="post post-showinfo type-post status-publish format-image has-post-thumbnail hentry category-news category-web-design tag-design tag-dynamics tag-minimal post_format-post-format-image">
-                {% if page.cover %}
+                
                 <div class="post-media">
                     <a class="feature-image">
-                        <img src="/assets/images/uploads/{{page.cover}}">   
+                        <img src="/assets/images/uploads/2015-08-31-05.png">   
                     </a>
                 </div>
-                {% endif %}
+                
                 <div class="post-body">
-                    {{ content | markdownify }}
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique nunc elit, in finibus tellus lobortis vel. Ut tempor urna velit, ac suscipit risus vehicula ut. Nunc at enim auctor, fermentum magna et, pulvinar turpis. Praesent fermentum accumsan risus sit amet scelerisque. Sed nec massa ante. Aenean viverra in est a bibendum. Nulla facilisi. Maecenas tempus sapien non nunc sodales posuere. Vivamus sed eros feugiat, placerat metus sed, laoreet enim. Ut tempus tellus eget maximus porta. Proin iaculis suscipit sagittis. Phasellus malesuada quis felis sed aliquam. Suspendisse ut vehicula odio. Donec magna urna, elementum sit amet laoreet quis, eleifend id nisi.</p>
+
+<h2>What is the fuss all about</h2>
+
+<p>This is list:
+* first item
+* second item
+* third item</p>
+
+<p>Let&#39;s try some code</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>  <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="o">*</span><span class="mi">10</span><span class="p">);</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
                 </div>
                 <div class="text-center">
                     <small>Share this post</small>
                     <ul class="social-share">
                         <li>
-                            <a href="https://twitter.com/share?url={{site.share-url}}{{page.url}}" target="_blank" data-toggle="tooltip" title="" data-original-title="Share on Twitter">
+                            <a href="https://twitter.com/share?url=krakensystems.github.io/debug/this-is-actually-first-real-md-post/" target="_blank" data-toggle="tooltip" title="" data-original-title="Share on Twitter">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://plus.google.com/share?url={{site.share-url}}{{page.url}}" target="_blank" data-toggle="tooltip" title="" data-original-title="Share on Google+">
+                            <a href="https://plus.google.com/share?url=krakensystems.github.io/debug/this-is-actually-first-real-md-post/" target="_blank" data-toggle="tooltip" title="" data-original-title="Share on Google+">
                                 <i class="fa fa-google-plus"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="http://www.facebook.com/sharer.php?u={{site.share-url}}{{page.url}}&amp;images={{site.share-url}}/assets/images/uploads/{{page.cover}}" target="_blank" data-toggle="tooltip" title="" data-original-title="Share on Facebook">
+                            <a href="http://www.facebook.com/sharer.php?u=krakensystems.github.io/debug/this-is-actually-first-real-md-post/&amp;images=krakensystems.github.io/assets/images/uploads/2015-08-31-05.png" target="_blank" data-toggle="tooltip" title="" data-original-title="Share on Facebook">
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="//pinterest.com/pin/create/button/?url={{site.share-url}}{{page.url}}&amp;media={{site.share-url}}/assets/images/uploads/{{page.cover}}" target="_blank" data-toggle="tooltip" title="" data-original-title="Pin on Pinterest">
+                            <a href="//pinterest.com/pin/create/button/?url=krakensystems.github.io/debug/this-is-actually-first-real-md-post/&amp;media=krakensystems.github.io/assets/images/uploads/2015-08-31-05.png" target="_blank" data-toggle="tooltip" title="" data-original-title="Pin on Pinterest">
                                 <i class="fa fa-pinterest"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{site.share-url}}{{page.url}}" target="_blank" data-toggle="tooltip" title="" data-original-title="Share on LinkedIn">
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=krakensystems.github.io/debug/this-is-actually-first-real-md-post/" target="_blank" data-toggle="tooltip" title="" data-original-title="Share on LinkedIn">
                                 <i class="fa fa-linkedin"></i>
                             </a>
                         </li>
@@ -169,7 +182,24 @@
                     </ul>
                 </div>
                 <div>
-                    {% include comments.html %}
+                    
+<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'krakensystems'; // required: replace example with your forum shortname
+  var disqus_identifier = "/debug/this-is-actually-first-real-md-post/";
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
                 </div>
             </article>
             </div>
@@ -177,13 +207,19 @@
                             <div class="sidebar-widget widget_categories">
                                 <h3 class="sidebar-header">Categories</h3>
                                 <ul>
-                                    {% for category in site.categories %}
+                                    
                                         <li>
-                                            <a href="/{{category | first}}">
-                                                {{ category | first}}
+                                            <a href="/development">
+                                                development
                                             </a>
                                         </li>
-                                    {% endfor %}
+                                    
+                                        <li>
+                                            <a href="/debug">
+                                                debug
+                                            </a>
+                                        </li>
+                                    
                                 </ul>
                             </div>
                             
@@ -191,13 +227,19 @@
                             <div class="sidebar-widget widget_archive">
                                 <h3 class="sidebar-header">Tags</h3>
                                 <ul>
-                                    {% for tag in site.tags %}
+                                    
                                          <li>
-                                            <a href="/{{tag | first}}">
-                                                {{ tag | first}}
+                                            <a href="/code">
+                                                code
                                             </a>
                                         </li>
-                                    {% endfor %}
+                                    
+                                         <li>
+                                            <a href="/test">
+                                                test
+                                            </a>
+                                        </li>
+                                    
                                 </ul>
                             </div>
                         </aside>
@@ -243,7 +285,7 @@
         <a class="go-top hex-alt swatch-black-yellow" href="javascript:void(0)">
             <i class="fa fa-angle-up"></i>
         </a>
-        <script src="{{ site.url }}/assets/js/packages.min.js"></script>
-        <script src="{{ site.url }}/assets/js/theme.min.js"></script>
+        <script src="/assets/js/packages.min.js"></script>
+        <script src="/assets/js/theme.min.js"></script>
     </body>
 </html>
