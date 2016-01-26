@@ -89,13 +89,29 @@
                         <br><br>
                         <div class="post-head small-screen-center">
                             <small class="post-author">
-                                <a href="http://angle.oxygenna.com/author/proistak/">
-                                    proistak
+                                <a href="{{ page.author_link }}">
+                                    {{ page.author }}
                                 </a>
                             </small>
                             <small class="post-date">
                                 {{ page.date | date_to_string }}
                             </small>
+                        </div>
+                        <div class="post-extras bordered padded-huge text-center">
+                            <div class="text-center">
+                                <span class="post-category">
+                                    <i class="fa fa-folder-open"></i>
+                                    {% for category in page.categories %}
+                                        <a href="/category/{{ category }}" rel="tag">{{ category }}</a>
+                                    {% endfor %}
+                                </span>
+                                <span class="post-tags">
+                                    <i class="fa fa-tags"></i>
+                                    {% for tag in page.tags %}
+                                        <a href="/tag/{{ tag }}" rel="tag">{{ tag }}</a>, 
+                                    {% endfor %}
+                                </span>
+                            </div>
                         </div>
                     </header>
                 </div>
@@ -119,11 +135,39 @@
                 <div class="post-body">
                     {{ content }}
                 </div>
-                <div class="post-extras padded-huge text-center">
+                <div>
                     {% include comments.html %}
                 </div>
             </article>
             </div>
+            <aside class="col-md-3 sidebar">
+                            <div class="sidebar-widget widget_categories">
+                                <h3 class="sidebar-header">Categories</h3>
+                                <ul>
+                                    {% for category in site.categories %}
+                                        <li>
+                                            <a href="/{{category | first}}">
+                                                {{ category | first}}
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            
+                            
+                            <div class="sidebar-widget widget_archive">
+                                <h3 class="sidebar-header">Tags</h3>
+                                <ul>
+                                    {% for tag in site.tags %}
+                                         <li>
+                                            <a href="/{{tag | first}}">
+                                                {{ tag | first}}
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </aside>
             </div>
             </div>
             </section>
