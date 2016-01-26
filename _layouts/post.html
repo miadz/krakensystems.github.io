@@ -82,7 +82,68 @@
             </div>
         </header>
         <div id="content" role="main">
-
+            <article class="post post-showinfo type-post status-publish format-image has-post-thumbnail hentry category-news category-web-design tag-design tag-dynamics tag-minimal post_format-post-format-image">
+                <div class="post-media">
+                    <a class="feature-image">
+                        <img src="{{site.url}}/assets/images/uploads/{{post.cover}}">   
+                    </a>
+                </div>
+                <div class="post-head small-screen-center">
+                    <h2 class="post-title entry-title">
+                        <a href="http://angle.oxygenna.com/2013/11/this-theme-is-so-nice/" title="Permalink to This theme is so nice!" rel="bookmark">
+                            This theme is so nice!</a>
+                    </h2>
+                    <small class="post-author">
+                        <a href="http://angle.oxygenna.com/author/proistak/">
+                            proistak
+                        </a>
+                    </small>
+                    <small class="post-date">
+                        November 12, 2013
+                    </small>
+                </div>
+                <div class="post-body">
+                    <p>
+                        {{ post.excerpt }}    
+                    </p>
+                    <a class="more-link" href="{{post.url}}">
+                        read more
+                    </a>
+                </div>
+                <div class="post-extras bordered padded-huge text-center">
+                    <div class="text-center">
+                        <span class="post-category">
+                            <i class="fa fa-folder-open"></i>
+                            {% for category in post.categories %}
+                                <a href="{{ site.url }}/category/{{ category }}" rel="tag">{{ category }}</a>
+                            {% endfor %}
+                        </span>
+                        <span class="post-tags">
+                            <i class="fa fa-tags"></i>
+                            {% for tag in post.tags %}
+                                <a href="{{ site.url }}/tag/{{ tag }}" rel="tag">{{ tag }}</a>, 
+                            {% endfor %}
+                        </span>
+                        <span class="post-link">
+                            <i class="fa fa-comments"></i>
+                            <a href="{{ site.url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ site.url }}{{post.url}}">Link</a>
+                        </span>
+                        {% if post.comments %}
+                            <div id="disqus_thread"></div>
+                            <script type="text/javascript">
+                              var disqus_shortname = 'kraken_systems'; // required: replace example with your forum shortname
+                              var disqus_developer = 1; // Comment out when the site is live
+                              (function () {
+                                var s = document.createElement('script'); s.async = true;
+                                s.type = 'text/javascript';
+                                s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+                                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                              }());
+                            </script>
+                        {% endif %}
+                    </div>
+                </div>
+            </article>
             {{ content }}
 
 
