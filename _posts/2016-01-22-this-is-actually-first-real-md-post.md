@@ -16,6 +16,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique nunc el
 ## What is the fuss all about 
 
 This is list:
+
 * first item
 * second item
 * third item
@@ -24,3 +25,11 @@ Let's try some code
 {% highlight javascript linenos %}
 	var i = Math.round(Math.random()*10);
 {% endhighlight %}
+
+
+| Test | Test | Test | 
+| -----|:----:|-----:|
+| test | test | test |         
+| test | test | test |
+| test | test | test |
+| test | test | test |
