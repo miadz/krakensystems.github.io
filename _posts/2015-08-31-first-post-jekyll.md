@@ -2,8 +2,7 @@
 layout: post
 title: 'Build cloud from scratch'
 date: 2016-01-15 13:26:34
-author: 'Dejan Strbad'
-author_link: https://hr.linkedin.com/in/dstrbad
+author: dstrbad
 cover: 2015-08-31-05.png
 categories: development
 tags: [code]
