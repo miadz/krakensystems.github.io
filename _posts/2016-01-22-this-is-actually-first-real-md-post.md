@@ -26,7 +26,7 @@ Let's try some code
 
 
 | Test | Test | Test | 
-| -----|:----:|-----:|
+| ---- | ---- | ---- |
 | test | test | test |         
 | test | test | test |
 | test | test | test |

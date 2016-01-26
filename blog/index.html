@@ -5,6 +5,7 @@ active: blog
 excerpt: "We should add this for meta"
 comments: true
 search_omit: true
+permalink: blog/
 ---
 
 <section class="section swatch-yellow-black">
@@ -26,7 +27,7 @@ search_omit: true
 <div class="container">
 	<div class="row">
 	    <div class="col-md-9">
-			{% for post in site.posts %}
+			{% for post in site.posts limit:1 %}
 			<article class="post post-showinfo type-post status-publish format-image has-post-thumbnail hentry category-news category-web-design tag-design tag-dynamics tag-minimal post_format-post-format-image">
                 {% if post.cover %}
 				<div class="post-media">
@@ -37,7 +38,7 @@ search_omit: true
                 {% endif %}
 				<div class="post-head small-screen-center">
 			        <h2 class="post-title entry-title">
-			            <a href="{{ post.url }}" title="Permalink to This theme is so nice!" rel="bookmark">
+			            <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">
 			                 {{ post.title }}
                         </a>
 			        </h2>
@@ -80,6 +81,9 @@ search_omit: true
 				</div>
 			</article>
 			{% endfor %}
+            {% if paginator.total_pages > 1 %}
+{{paginator}}
+{% endif %}
 		</div>
 		<aside class="col-md-3 sidebar">
                             <div class="sidebar-widget widget_categories">

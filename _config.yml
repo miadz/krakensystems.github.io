@@ -7,30 +7,20 @@ search: true
 share-url: "krakensystems.github.io"
 
 # Jekyll configuration
-
-permalink:   /:categories/:title/
+permalink: /blog/:year/:title/
+paginate_path: "/blog/page:num/"
 markdown:    redcarpet
 highlighter: pygments
 gems:
   - jekyll-sitemap
-  - jekyll-archives
+  - jekyll-paginate
 
 redcarpet:
   extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
 
 mathjax: true
 
-jekyll-archives:
-  enabled: []
-  layout: 'archive'
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    tag: '/tag/:name/'
-    category: '/category/:name/'
-
-
+paginate: 1
 
 # Octopress
 

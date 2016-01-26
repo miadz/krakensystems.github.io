@@ -14698,4 +14698,14 @@ table.variations .select-wrap select, .variation-wrap .select-wrap select {
 }
 .swatch-white-red .post-category a:hover, .swatch-white-red .post-tags a:hover, .swatch-white-red .post-link a:hover {
 	color:#F0C40F !important;
-} 
+}
+.post-body table {width:100%;} 
+.post-body table tr td {
+	border-top:1px solid #eee;
+	padding:5px;
+}
+.post-body table thead th {
+	background: #F0C40F;
+	color:#1C1E20;
+	padding:10px 5px;
+}
