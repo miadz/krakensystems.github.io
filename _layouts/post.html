@@ -82,74 +82,51 @@
             </div>
         </header>
         <div id="content" role="main">
+            <section class="section swatch-yellow-black">
+                <div class="container">
+                    <header class="section-header no-underline">
+                        <h1 class="headline hyper hairline"> {{ page.title }} </h1>
+                        <br><br>
+                        <div class="post-head small-screen-center">
+                            <small class="post-author">
+                                <a href="http://angle.oxygenna.com/author/proistak/">
+                                    proistak
+                                </a>
+                            </small>
+                            <small class="post-date">
+                                {{ page.date | date_to_string }}
+                            </small>
+                        </div>
+                    </header>
+                </div>
+            </section>
+            <section class="section swatch-white-red has-top">
+            <div class="decor-top">
+                <svg class="decor" height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0 L50 100 L100 0 L100 100 L0 100" stroke-width="0"></path>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+
             <article class="post post-showinfo type-post status-publish format-image has-post-thumbnail hentry category-news category-web-design tag-design tag-dynamics tag-minimal post_format-post-format-image">
                 <div class="post-media">
                     <a class="feature-image">
-                        <img src="{{site.url}}/assets/images/uploads/{{post.cover}}">   
+                        <img src="/assets/images/uploads/{{page.cover}}">   
                     </a>
-                </div>
-                <div class="post-head small-screen-center">
-                    <h2 class="post-title entry-title">
-                        <a href="http://angle.oxygenna.com/2013/11/this-theme-is-so-nice/" title="Permalink to This theme is so nice!" rel="bookmark">
-                            This theme is so nice!</a>
-                    </h2>
-                    <small class="post-author">
-                        <a href="http://angle.oxygenna.com/author/proistak/">
-                            proistak
-                        </a>
-                    </small>
-                    <small class="post-date">
-                        November 12, 2013
-                    </small>
                 </div>
                 <div class="post-body">
-                    <p>
-                        {{ post.excerpt }}    
-                    </p>
-                    <a class="more-link" href="{{post.url}}">
-                        read more
-                    </a>
+                    {{ content }}
                 </div>
-                <div class="post-extras bordered padded-huge text-center">
-                    <div class="text-center">
-                        <span class="post-category">
-                            <i class="fa fa-folder-open"></i>
-                            {% for category in post.categories %}
-                                <a href="{{ site.url }}/category/{{ category }}" rel="tag">{{ category }}</a>
-                            {% endfor %}
-                        </span>
-                        <span class="post-tags">
-                            <i class="fa fa-tags"></i>
-                            {% for tag in post.tags %}
-                                <a href="{{ site.url }}/tag/{{ tag }}" rel="tag">{{ tag }}</a>, 
-                            {% endfor %}
-                        </span>
-                        <span class="post-link">
-                            <i class="fa fa-comments"></i>
-                            <a href="{{ site.url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ site.url }}{{post.url}}">Link</a>
-                        </span>
-                        {% if post.comments %}
-                            <div id="disqus_thread"></div>
-                            <script type="text/javascript">
-                              var disqus_shortname = 'kraken_systems'; // required: replace example with your forum shortname
-                              var disqus_developer = 1; // Comment out when the site is live
-                              (function () {
-                                var s = document.createElement('script'); s.async = true;
-                                s.type = 'text/javascript';
-                                s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-                                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-                              }());
-                            </script>
-                        {% endif %}
-                    </div>
+                <div class="post-extras padded-huge text-center">
+                    {% include comments.html %}
                 </div>
             </article>
-            {{ content }}
-
-
-            {% for tag in page.tags %}
-            <p>{{ tag }}</p>
-            {% endfor %}
+            </div>
+            </div>
+            </div>
+            </section>
 
 
             <footer id="footer" role="contentinfo">
@@ -162,7 +139,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <div id="swatch_social-2" class="sidebar-widget  widget_swatch_social">
+                                <!-- <div id="swatch_social-2" class="sidebar-widget  widget_swatch_social">
                                     <ul class="unstyled inline small-screen-center social-icons social-background social-big">
                                         <li>
                                             <a target="_blank" href="http://www.oxygenna.com">
@@ -171,16 +148,11 @@
                                         </li>
                                         <li>
                                             <a target="_blank" href="http://www.oxygenna.com">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a target="_blank" href="http://www.oxygenna.com">
-                                                <i class="fa fa-google-plus"></i>
+                                                <i class="fa fa-linkedin"></i>
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> -->
                                 <div id="text-4" class="sidebar-widget widget_text">
                                     <div class="textwidget">KRAKEN 2016 ALL RIGHTS RESERVED
                                     </div>

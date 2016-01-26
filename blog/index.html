@@ -3,6 +3,7 @@ layout: page
 title: Blog | Kraken Systems
 active: blog
 excerpt: "We should add this for meta"
+comments: true
 search_omit: true
 ---
 
@@ -28,22 +29,23 @@ search_omit: true
 			{% for post in site.posts %}
 			<article class="post post-showinfo type-post status-publish format-image has-post-thumbnail hentry category-news category-web-design tag-design tag-dynamics tag-minimal post_format-post-format-image">
 				<div class="post-media">
-					<a class="feature-image">
-						<img src="{{site.url}}/assets/images/uploads/{{post.cover}}">	
+					<a href="{{ post.url }}" class="feature-image">
+						<img src="/assets/images/uploads/{{post.cover}}">	
 					</a>
 				</div>
 				<div class="post-head small-screen-center">
 			        <h2 class="post-title entry-title">
-			            <a href="http://angle.oxygenna.com/2013/11/this-theme-is-so-nice/" title="Permalink to This theme is so nice!" rel="bookmark">
-			                This theme is so nice!</a>
+			            <a href="{{ post.url }}" title="Permalink to This theme is so nice!" rel="bookmark">
+			                 {{ post.title }}
+                        </a>
 			        </h2>
 			        <small class="post-author">
-			            <a href="http://angle.oxygenna.com/author/proistak/">
-			                proistak
+			            <a href="{{ post.author_link }}">
+			                {{ post.author }}
 			            </a>
 			        </small>
         			<small class="post-date">
-            			November 12, 2013
+            			{{ post.date | date_to_string }}
             		</small>
             	</div>
 				<div class="post-body">
@@ -59,32 +61,19 @@ search_omit: true
             			<span class="post-category">
                             <i class="fa fa-folder-open"></i>
                             {% for category in post.categories %}
-                				<a href="{{ site.url }}/category/{{ category }}" rel="tag">{{ category }}</a>
+                				<a href="/category/{{ category }}" rel="tag">{{ category }}</a>
                 			{% endfor %}
                 		</span>
             			<span class="post-tags">
                             <i class="fa fa-tags"></i>
                             {% for tag in post.tags %}
-                				<a href="{{ site.url }}/tag/{{ tag }}" rel="tag">{{ tag }}</a>, 
+                				<a href="/tag/{{ tag }}" rel="tag">{{ tag }}</a>, 
                 			{% endfor %}
                 		</span>
             			<span class="post-link">
                             <i class="fa fa-comments"></i>
-                			<a href="{{ site.url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ site.url }}{{post.url}}">Link</a>
+                			<a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.url}}">Link</a>
                 		</span>
-                		{% if post.comments %}
-	                		<div id="disqus_thread"></div>
-							<script type="text/javascript">
-						      var disqus_shortname = 'kraken_systems'; // required: replace example with your forum shortname
-						      var disqus_developer = 1; // Comment out when the site is live
-						      (function () {
-						        var s = document.createElement('script'); s.async = true;
-						        s.type = 'text/javascript';
-						        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-						        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-						      }());
-						    </script>
-					    {% endif %}
         			</div>
 				</div>
 			</article>
@@ -157,3 +146,4 @@ search_omit: true
 	</div>
 </div>
 </section>
+<script id="dsq-count-scr" src="//krakensystems.disqus.com/count.js" async></script>

@@ -1,12 +1,13 @@
 ---
 layout: post
-title: 'My First Post on Jekyll'
-date: 2015-08-31 13:26:34
+title: 'Build cloud from scratch'
+date: 2016-01-15 13:26:34
+author: 'Dejan Strbad'
+author_link: https://hr.linkedin.com/in/dstrbad
 cover: 2015-08-31-05.png
 categories: development
-tags: [cats,dogs,code]
+tags: [code]
 comments: true
-custom_var: 'meow meow meow'
 
 ---
 
