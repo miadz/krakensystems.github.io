@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://krakensystems.github.io//development/first-post-jekyll/</loc>
+    <loc>/development/first-post-jekyll/</loc>
     <lastmod>2016-01-15T14:26:34+01:00</lastmod>
   </url>
   <url>
-    <loc>http://krakensystems.github.io//about/</loc>
+    <loc>/about/</loc>
   </url>
   <url>
-    <loc>http://krakensystems.github.io//blog/</loc>
+    <loc>/blog/</loc>
   </url>
   <url>
-    <loc>http://krakensystems.github.io//contact/</loc>
+    <loc>/contact/</loc>
   </url>
   <url>
-    <loc>http://krakensystems.github.io//services/</loc>
+    <loc>/services/</loc>
   </url>
   <url>
-    <loc>http://krakensystems.github.io//</loc>
+    <loc>/</loc>
   </url>
     <url>
-      <loc>http://krakensystems.github.io//development/first-post-jekyll/</loc>
+      <loc>/development/first-post-jekyll/</loc>
     </url>
   <url>
-    <loc>http://krakensystems.github.io//about/about.html</loc>
+    <loc>/about/about.html</loc>
     <lastmod>2016-01-22T16:47:18+01:00</lastmod>
   </url>
   <url>
-    <loc>http://krakensystems.github.io//contact/contact.html</loc>
+    <loc>/contact/contact.html</loc>
     <lastmod>2016-01-25T18:39:38+01:00</lastmod>
   </url>
   <url>
-    <loc>http://krakensystems.github.io//services/services.html</loc>
+    <loc>/services/services.html</loc>
     <lastmod>2016-01-25T13:06:58+01:00</lastmod>
   </url>
 </urlset>
