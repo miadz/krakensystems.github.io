@@ -7,7 +7,7 @@ search: true
 share-url: "krakensystems.github.io"
 
 # Jekyll configuration
-permalink: /blog/:year/:title/
+permalink: /blog/:year/:title
 paginate_path: "/blog/page:num/"
 markdown:    redcarpet
 highlighter: pygments
