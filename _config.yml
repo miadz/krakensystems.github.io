@@ -20,7 +20,7 @@ redcarpet:
 
 mathjax: true
 
-paginate: 1
+paginate: 10
 
 # Octopress
 

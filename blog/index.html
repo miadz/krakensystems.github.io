@@ -27,7 +27,7 @@ permalink: blog/
 <div class="container">
 	<div class="row">
 	    <div class="col-md-9">
-			{% for post in site.posts limit:1 %}
+			{% for post in site.posts limit:10 %}
 			<article class="post post-showinfo type-post status-publish format-image has-post-thumbnail hentry category-news category-web-design tag-design tag-dynamics tag-minimal post_format-post-format-image">
                 {% if post.cover %}
 				<div class="post-media">
@@ -81,9 +81,6 @@ permalink: blog/
 				</div>
 			</article>
 			{% endfor %}
-            {% if paginator.total_pages > 1 %}
-{{paginator}}
-{% endif %}
 		</div>
 		<aside class="col-md-3 sidebar">
                             <div class="sidebar-widget widget_categories">
